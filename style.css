@@ -1,0 +1,512 @@
+@font-face
+{
+    font-family: "Poppins";
+    src: url('Poppins/Poppins-Medium.ttf');
+}
+:root{
+    --color1 : orangered;
+    --color2 : white;
+}
+#conteneur
+{
+    display: grid;
+    margin: auto;
+    min-height: 100vh;
+    font-family: "Poppins";
+}
+#conteneur > div:nth-child(1)
+{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: -20%;
+}
+
+#conteneur > div:nth-child(1) > div:nth-child(1)
+{
+    background-image: url(Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height:7em;
+}
+#conteneur > div:nth-child(1) > div:nth-child(2)
+{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+}
+#conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(1),#conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(2),#conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(3),#conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(4)
+{
+    position: relative;
+    top: 50%;
+    block-size: 20%;
+}
+#conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)
+{
+    color: orangered;
+}
+#conteneur > div:nth-child(2)
+{
+    background-image: url(Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: 200%;
+    /* block-size: 113%; */
+    /* position:relative;
+    bottom: 33%; */
+
+}
+#conteneur > div:nth-child(2) > div:nth-child(1)
+{
+    background-color: rgba(0, 0, 0,0.5);
+    block-size: 100%;
+}
+.Text1,.Text2,.Text3,.Text4{
+    position: relative;
+    color: white;
+    margin: auto; 
+    text-align: center;
+}
+
+.txt{
+    position: relative;
+    top: -88%;
+}
+
+.Text1
+{
+    font-size: 1.4em;
+    font-weight: bold;
+    /* bottom: 91%; */
+}
+.Text2
+{
+    font-size: 3em;
+    font-weight: bold;
+    /* bottom: 86%; */
+}
+.Text3
+{
+    font-size: 3em;
+    font-weight: bold;
+    /* bottom: 86%; */
+}
+.Text4
+{
+    font-size: 1.3em;
+    /* bottom: 81%; */
+}
+#bouton
+{
+    display: flex;
+    block-size: 9%;
+    width: 30em;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 2%;
+    /* position: relative;
+    bottom: 78%; */
+}
+.bouton1, .bouton2
+{
+    color: white;
+    border-radius: 20px;
+    width: 40%;
+    block-size: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+.bouton1
+{
+    background-color: orangered;
+    align-items: center;
+
+}
+.bouton2
+{
+    border: 1px solid white;
+    align-items: center;
+}
+
+
+
+#telephone_2
+{
+    background-image: url(2telephones.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* border: 2px solid white; */
+    width: 60%;
+    max-width: 150%;
+    block-size: 40em;
+    margin: auto; 
+    margin-top: 6%;
+    border-bottom: 2px solid gray;
+}
+#Text4
+{
+    font-size: 2em;
+    text-align: center;
+}
+#bloc ,#bloc1
+{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+#image_1_1
+{
+    width: 15%;
+    height: 150%;
+    overflow: hidden;
+    margin: auto;
+}
+.TXT1
+{
+    color: orangered;
+    margin-top: 25%;
+}
+.TXT3,.TXT2
+{
+    font-size: 2em;
+    font-weight: bold;
+}
+.TXT4,.TXT5
+{
+    color: grey;
+}
+#image_11
+    {
+        background-image: url(RectangleImg3.png);
+        height: 200%;
+        width: 15%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+#bloc1
+{
+    margin-top: 15%;
+}
+.bloc_txt1
+{
+    margin-left: 10%;
+}
+.bloc_txt
+{
+    margin-right: 20%;
+}
+#footer
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    position: relative;
+    z-index: 9999;
+    height: 30%;
+    bottom: -90%;
+}
+#foot_logo
+{
+    background-image: url(Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 80px;
+}
+#foot_twitter
+{
+    background-image: url(Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    /* height: 80px; */
+
+    position: relative;
+}
+#foot_reseau
+{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: -100%;
+}
+#foot_twitter,#foot_facebook,#foot_instagram
+{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+}
+#foot_twitter
+{
+    background-image: url(Vector1.png);
+    height: 95%;
+}
+#foot_facebook
+{
+    background-image: url(Vector.png);
+}
+#foot_instagram
+{
+    background-image: url(instagramicone.png);
+}
+
+@media only screen and (min-width: 59vh){
+    #telephone_2
+    {
+        margin-top: 8em;
+    }
+}
+@media only screen and (max-width: 60vh){
+    #conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(2),#conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(3),#conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(4),#conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)
+    {
+        display: none;
+    }
+    
+    .Menu_hamberguer
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        block-size: 60%;
+        width: 20%;
+    }
+    .Trait_un,.Trait_deux,.Trait_trois
+    {
+        width: 80%;
+        border: 3px solid black;
+        border-radius: 20px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    #conteneur > div:nth-child(2)
+    {
+        background-color: rgba(215, 206, 206, 0.5);
+        block-size: 100%;
+        height: 35em;
+    }
+    #telephone_2
+    {
+        margin-top: -16%;
+    }
+    .bloc_txt
+    {
+        top: 170%;
+        position: relative;
+    }
+    #image_1_1
+    {
+        position: relative;
+        left: 30%;
+        width: 30%;
+    }
+    #image_11
+    {
+        position: relative;
+        right: 30%;
+        width: 30%;
+        top: 150%;
+    }
+    .bloc_txt1
+    {
+        top: 320%;
+        position: relative;
+        left: 15%;
+    }
+    #footer
+    {
+        bottom: -450%;
+    }
+  }
+  @media only screen and (max-width: 48vh){
+    #telephone_2
+    {
+        block-size: 45em;
+        margin-top: -20%;
+    }
+    #Text4
+    {
+        font-size: 3em;
+    }
+  }
+  @media only screen and (max-width: 34vh){
+    #telephone_2
+    {
+        margin-top: -28%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  /* @media only screen and (max-width: 600px) {
+    #conteneur > div:nth-child(1) {
+    height: auto;
+    }
+    #conteneur > div:nth-child(1) > div:nth-child(1) {
+        height: 10em;
+    }
+    
+    #conteneur > div:nth-child(1) > div:nth-child(2) {
+        width: 60%;
+        font-size: 1em;
+    }
+    
+    #conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(1),
+    #conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(2),
+    #conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(3),
+    #conteneur > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) {
+        block-size: 15%;
+    }
+    
+    #conteneur > div:nth-child(2) {
+        height: 300%;
+        position: relative;
+    }
+    
+    .txt {
+        top: -60%;
+    }
+     */
+     .telephone
+     {
+         background-color: whitesmoke;
+         margin: auto;
+         border: 10px solid rgb(255, 255, 255);
+         border-radius: 40px;
+         width: 175px;
+         height: 400px;
+         position: relative;
+         box-shadow: 0px 0px 15px rgb(213, 213, 213);
+ 
+     }
+    .haut
+    {
+        background-color: white;
+        border-radius: 30px;
+        height: 40%;
+    }
+    .logo
+    {
+        background-image: url(Logo.png );
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60%;
+        width: 100%;
+        position: relative;
+        top: 10%;
+    }
+    .text
+    {
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        position: relative;
+        top: 30%;
+        height: 15%;
+        font-size: xx-small;
+
+    }
+    .T1,.T2
+    {
+        width: 35%;
+        height: 55%;
+        text-align: center;
+    }
+    .T1
+    {
+        border-bottom: 1px solid red;
+    }
+    .formulaire
+    {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        margin-left: 15%;
+        position: relative;
+        margin-top: 20%;
+        font-size: 4%;
+    }
+    .sep
+    {
+        position: relative;
+        top: 2em;
+    }
+    .bouton
+    {
+        color: white;
+        background-color: orangered;
+        border: 2px solid orangered;
+        border-radius: 15px;
+        height: 5%;
+        width: 55%;
+        margin: auto;
+        margin-top: 30%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    input[type="text"]
+    {
+        border: none;
+        border-bottom: 1px solid black;
+        background-color: transparent;
+        width: 100%;
+        font-size: xx-small;
+        margin-bottom: 1em;
+    }
+    .mot_de_pass
+    {
+        color: orangered;
+        position: relative;
+        top: 0%;
+        left: 15%;
+        font-size: xx-small;
+    }
+    .camera
+    {
+        border-radius: 20px;
+        height: 5%;
+        top: -40%;
+        position: relative;
+    }
+    .haut_parleur {
+    z-index: 2;
+    background-color: white;
+    width: 30%;
+    height: 40%;
+    margin-left: 25%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: inset 0.1em 0.1em whitesmoke;
+    }
+    .camera_devant
+    {
+        z-index: 2;
+        height: 40%;
+        width: 5%;
+        border-radius: 11px;
+        margin-left: 60%;
+        position: relative;
+        margin-top: -4%;
+        box-shadow: inset 0.1em 0.1em whitesmoke;
+        
+    }
